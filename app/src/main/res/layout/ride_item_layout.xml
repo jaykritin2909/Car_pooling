@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ride_item_layout.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- ride_item_layout.xml -->
+
+
+        <!-- Rider Name -->
+        <TextView
+            android:id="@+id/textRiderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rider Name:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textRiderNameValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textRiderName"
+            android:layout_marginStart="8dp"
+            android:textSize="16sp" />
+
+        <!-- Source Address -->
+        <TextView
+            android:id="@+id/textSourceAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textRiderNameValue"
+            android:text="Source Address:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textSourceAddressValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textSourceAddress"
+            android:layout_marginStart="8dp"
+            android:textSize="16sp" />
+
+        <!-- Destination Address -->
+        <TextView
+            android:id="@+id/textDestinationAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textSourceAddressValue"
+            android:text="Destination Address:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textDestinationAddressValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textDestinationAddress"
+            android:layout_marginStart="8dp"
+            android:textSize="16sp" />
+
+        <!-- Total Passengers -->
+        <TextView
+            android:id="@+id/textTotalPassengers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textDestinationAddressValue"
+            android:text="Total Passengers:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textTotalPassengersValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textTotalPassengers"
+            android:layout_marginStart="8dp"
+            android:textSize="16sp" />
+
+        <!-- Ride Date -->
+        <TextView
+            android:id="@+id/textRideDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textTotalPassengersValue"
+            android:text="Ride Date:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textRideDateValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textRideDate"
+            android:layout_marginStart="8dp"
+            android:textSize="16sp" />
+
+        <!-- Ride Time -->
+        <TextView
+            android:id="@+id/textRideTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textRideDateValue"
+            android:text="Ride Time:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textRideTimeValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textRideTime"
+            android:layout_marginStart="8dp"
+            android:textSize="16sp" />
+
+        <!-- Ride Price -->
+        <TextView
+            android:id="@+id/textRidePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textRideTimeValue"
+            android:text="Ride Price:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textRidePriceValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textRidePrice"
+            android:layout_marginStart="8dp"
+            android:textSize="16sp" />
+
+        <!-- Phone Number -->
+        <TextView
+            android:id="@+id/textPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textRidePriceValue"
+            android:text="Phone Number:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textPhoneNumberValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textPhoneNumber"
+            android:layout_marginStart="8dp"
+            android:textSize="16sp" />
+
+        <!-- Aadhar Number -->
+        <TextView
+            android:id="@+id/textAadharNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textPhoneNumberValue"
+            android:text="Aadhar Number:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textAadharNumberValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textAadharNumber"
+            android:layout_marginStart="8dp"
+            android:textSize="16sp" />
+
+        <!-- Via Route -->
+        <TextView
+            android:id="@+id/textViaRoute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textAadharNumberValue"
+            android:text="Via Route:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViaRouteValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViaRoute"
+            android:layout_marginStart="8dp"
+            android:textSize="16sp" />
+    <Button
+        android:id="@+id/buttonBookRide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViaRouteValue"
+        android:layout_alignParentEnd="true"
+        android:text="Book Ride"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:padding="8dp" />
+
+    </RelativeLayout>

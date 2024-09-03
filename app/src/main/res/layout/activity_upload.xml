@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/CreateRideHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Ride"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/lavender"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/CreateRideHeader">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/RiderNameEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:hint="Rider Name"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/SourceAddressEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RiderNameEdit"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:hint="Enter Source"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/DestinationAddressEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/SourceAddressEdit"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:hint="Enter Destination"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/TotalPassengersEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/DestinationAddressEdit"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:hint="Total Passengers"
+                android:inputType="number"
+                android:padding="8dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/RideDateEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TotalPassengersEdit"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:hint="Ride Date (e.g:10-10-21)"
+                android:inputType="date"
+                android:padding="8dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/RideTimeEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RideDateEdit"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:hint="Ride Time (e.g:10:00 am)"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/RidePriceEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RideTimeEdit"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:hint="Price For Passenger"
+                android:inputType="number"
+                android:padding="8dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/PhoneNumberEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RidePriceEdit"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:padding="8dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/viaroute"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/PhoneNumberEdit"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:hint="Enter VIA route"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/aadharnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/viaroute"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:hint="Aadhar Number"
+                android:inputType="number"
+                android:padding="8dp"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/CreateRideBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aadharnumber"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Create Ride"
+                android:textColor="#121111"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/BackToHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/CreateRideBtn"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Back to Home"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

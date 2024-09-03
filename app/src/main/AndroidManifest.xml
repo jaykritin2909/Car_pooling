@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/starting"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/starting"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        android:enableOnBackInvokedCallback="true">
+        <activity android:name=".Model.ProfileActivity"></activity>
+        <activity android:name=".Model.SOSActivity"></activity>
+
+
+
+
+        <activity
+            android:name=".Model.UploadActivity"
+            android:exported="false" />
+        <activity android:name=".Activities.RegisterActivity" /> <!-- LoginActivity as the launcher activity -->
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Other activities -->
+        <activity android:name=".Model.MainActivity" />
+    </application>
+
+</manifest>
